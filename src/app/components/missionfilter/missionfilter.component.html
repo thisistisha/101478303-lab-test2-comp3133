@@ -1,0 +1,16 @@
+<!-- Launch Year Filter -->
+<input [(ngModel)]="launchYear" placeholder="e.g. 2020" />
+<button (click)="applyFilter()">Filter</button>
+
+<!-- Launch -->
+<p><strong>Launch</strong></p>
+<input type="radio" name="launch" [(ngModel)]="launchSuccess" [value]="true" (change)="selectLaunch(launchSuccess)" /> Successful
+<input type="radio" name="launch" [(ngModel)]="launchSuccess" [value]="false" (change)="selectLaunch(launchSuccess)" /> Failed
+
+<!-- Landing -->
+<p><strong>Landing</strong></p>
+<input type="radio" name="landing" [(ngModel)]="landingSuccess" [value]="true" (change)="selectLanding(landingSuccess)" /> Successful
+<input type="radio" name="landing" [(ngModel)]="landingSuccess" [value]="false" (change)="selectLanding(landingSuccess)" /> Failed
+
+<!-- Reset -->
+<button (click)="reset()">Reset Filters</button>

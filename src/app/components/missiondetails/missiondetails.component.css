@@ -1,0 +1,48 @@
+.details-container {
+    background-color: #f9b974;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .patch {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2, h3 {
+    margin-top: 20px;
+    color: #333;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+  }
+  
+  p, li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

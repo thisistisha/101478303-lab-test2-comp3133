@@ -1,0 +1,23 @@
+<div class="page-title">COMP 3133 | Lab Test2 | SpaceX API</div>
+<h2>Mission List</h2>
+
+<app-missionfilter
+  (filterByYear)="applyYearFilter($event)"
+  (resetAll)="resetFilters()"
+  (filterByLaunch)="filterByLaunch($event)"
+  (filterByLanding)="filterByLanding($event)">
+</app-missionfilter>
+
+
+<div *ngFor="let mission of missions" class="mission-card">
+  <a [routerLink]="['/mission', mission.flight_number]">
+    <div class="mission-content">
+      <img [src]="mission.links.mission_patch_small" alt="Patch" class="mission-patch" />
+      <div class="mission-info">
+        <h3>{{ mission.mission_name }}</h3>
+        <p><strong>{{ mission.launch_year }}</strong></p>
+        <p>{{ mission.details || 'No details available.' }}</p>
+      </div>
+    </div>
+  </a>
+</div>
