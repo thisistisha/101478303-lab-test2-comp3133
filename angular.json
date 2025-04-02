@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "101422675-lab-test2-comp3133": {
+    "101478303-lab-test2-comp3133": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "101422675-lab-test2-comp3133:build:production"
+              "buildTarget": "101478303-lab-test2-comp3133:build:production"
             },
             "development": {
-              "buildTarget": "101422675-lab-test2-comp3133:build:development"
+              "buildTarget": "101478303-lab-test2-comp3133:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "847d2384-22dd-452b-8a02-3ea917e002f7"
   }
 }
